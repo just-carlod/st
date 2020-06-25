@@ -272,6 +272,8 @@ invertedcolor(Color *clr) {
 	rc.green = ~clr->color.green;
 	rc.blue = ~clr->color.blue;
 	rc.alpha = clr->color.alpha;
+	XftColorAllocValue(xw.dpy, xw.vis, xw.cmap, &rc, &inverted);
+	return inverted;
 }
 
 void
