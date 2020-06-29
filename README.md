@@ -1,6 +1,6 @@
 ## Build information
-### St 0.8.3
-#### 	Features and added patches
+## St version : 0.8.3
+### 	Features and added patches
 	*	transparency support (10% by default)
 	*	nordtheme color scheme
 	*	invert colors
