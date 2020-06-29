@@ -13,4 +13,6 @@
 *	zoom in/out
 
 
+
+
 [Offical St's site](https://st.suckless.org)
