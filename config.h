@@ -5,9 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Jetbrains mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Jetbrains mono:pixelsize=17:antialias=true:autohint=true";
 static char *font2[] = {
-	"Noto Color Emoji:pixelsize=12:antialias=true:autohint:true"
+	"Noto Color Emoji:pixelsize=12:antialias=true:autohint:true",
+	"Twemoji:pixelsize=15:antialias=true:autohint:true"
 };
 static int borderpx = 3;
 
@@ -197,8 +198,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ MODKEY,               XK_equal,       zoom,           {.f = +1} },
-	{ MODKEY,               XK_minus,       zoom,           {.f = -1} },
+	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
+	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
 	{ MODKEY,          	0,              zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
